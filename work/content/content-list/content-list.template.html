@@ -2,9 +2,12 @@
     <div class="row container text-center">
         <div class="col-sm-6 col-md-3"  ng-repeat="list in $ctrl.tvlist">
             <div class="card">
-                <div class="card-body">
-                    <h3 class="card-title">{{list.title}}</h3>
-                    <p class="card-text">{{list.genre}}</p>
+                <img class="card-img" ng-src="{{list.thumburl}}" alt="{{list.title}}">
+                <div class="card-img-overlay">
+                    <div class="card-body">
+                        <h3 class="card-title">{{list.title}}</h3>
+                        <p class="card-text">{{list.genre}}</p>
+                    </div>
                 </div>
             </div>
         </div>

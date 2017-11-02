@@ -5,22 +5,22 @@ angular.module('contentList').component('contentList', {
             {
                 title: 'Title One',
                 genre: 'Comedy',
-                thumburl: 'url here',
+                thumburl: 'https://www.estrenosdoramas.net/wp-content/uploads/2017/08/Memory_Love_3-1.jpg',
                 age: 1
             }, {
                 title: 'Title Two',
                 genre: 'Comedy',
-                thumburl: 'url here',
+                thumburl: 'https://www.estrenosdoramas.net/wp-content/uploads/2017/08/Memory_Love_3-1.jpg',
                 age: 2
             }, {
                 title: 'Title Three',
                 genre: 'Comedy',
-                thumburl: 'url here',
+                thumburl: 'https://www.estrenosdoramas.net/wp-content/uploads/2017/08/Memory_Love_3-1.jpg',
                 age: 3
             }, {
                 title: 'Title Four',
                 genre: 'Comedy',
-                thumburl: 'url here',
+                thumburl: 'https://www.estrenosdoramas.net/wp-content/uploads/2017/08/Memory_Love_3-1.jpg',
                 age: 4
             },
         ];
