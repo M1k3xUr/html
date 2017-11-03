@@ -9,7 +9,7 @@
     </div>
     <div class="row  text-center">
         <div class="col-sm-6 col-md-4 container"  ng-repeat="list in $ctrl.kdlist | orderBy:$ctrl.orderProp">
-            <a href="#!/tvlist/{{list.id}}">
+            <a href="#/tvlist/{{list.id}}">
                 <div class="card bg-dark">
                     <img class="card-img" ng-src="{{list.thumburl}}" alt="{{list.title}}">
                     <div class="card-img-overlay">

@@ -28,10 +28,14 @@
   <!-- angular -->
   <script src="scripts/angular.min.js"></script>
   <script src="scripts/angular-ui-router.min.js"></script>
+  <script src="scripts/app.js" async></script>
+  <!-- <script src="scripts/app.config.js"></script> -->
   <script src="content/content-main/content-main.module.js"></script>
   <script src="content/content-main/content-main.component.js"></script>
   <script src="content/content-list/content-list.module.js"></script>
   <script src="content/content-list/content-list.component.js"></script>
+  <script src="content/content-detail/content-detail.module.js"></script>
+  <script src="content/content-detail/content-detail.component.js"></script>
   <!-- TODO add manifest here -->
   
 </head>
@@ -45,15 +49,16 @@
 
   <main class="main">
     <!-- content -->
-    <content-main></content-main>
-    <content-list></content-list>
-    <!-- <div ng-view></div> -->
+    <!-- <content-main></content-main>
+    <content-list></content-list> -->
+    <div ng-view></div>
   </main>
 
   <!-- Uncomment the line below when ready to test with fake data -->
-  <script src="scripts/app.js" async></script>
+  
   <!-- <script src="scripts/app.config.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src="scripts/bootstrap.min.js"></script>
-
 </body>
 </html>

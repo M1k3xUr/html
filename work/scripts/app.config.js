@@ -1,11 +1,13 @@
-angular.module('myListApp').config(['$locationProvider', '$routeProvider', function config($locationProvider, $routerProvider){
-    $locationProvider.hasPrefix('!');
-
-    $routerProvider.when('/list', {
+angular.module('myListApp').config(['$routeProvider', function config($routeProvider){
+    // routing
+    $routeProvider
+    .when('/', {
+        template: '<content-main></content-main>'
+    })
+    .when('/list', {
         template: '<content-list></content-list>'
-    }).
-    when('/list/:listId', {
-        template: '<drama-tv></drama-tv>'
-    }).
-    otherwise('/');
+    })
+    .when('/list/:listId', {
+        template: '<content-detail></content-detail>'
+    });
 }]);
