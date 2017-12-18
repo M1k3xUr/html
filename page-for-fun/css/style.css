@@ -1,0 +1,12 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: lightgrey;
+}
+
+.optional-div{
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+}
