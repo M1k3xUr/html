@@ -14,35 +14,26 @@
         <section class="option-screens center">
             <h4>screen options</h4>
             <div class="tab">
-                <button type="button" onclick="openTab(event, 'Phones')"><span class="fa fa-mobile fa-2x"></span> Size</button>
-                <button type="button" onclick="openTab(event, 'Tablets')"><span class="fa fa-tablet fa-2x"></span> Tablet Size</button>
-                <button type="button" onclick="openTab(event, 'Web')"><span class="fa fa-desktop fa-2x"></span> Size</button>
-            </div>
-            <div id="Phones" class="tabcontent">
-                <ul><li>somenthing here..1.</li></ul>
-            </div>
-            <div id="Tablets" class="tabcontent">
-                <ul><li>somenthing here.2..</li></ul>
-            </div>
-            <div id="Web" class="tabcontent">
-                <ul><li>somenthing here..3.</li></ul>
+                <button type="button" class="btn" onclick="phoneView()">Mobile Phone</button>
+                <button id="tbtn" type="button" class="btn" onclick="tabletView()">Tablet</button>
+                <button type="button" class="btn" onclick="desktopView()">Mobile Phone</button>
             </div>
         </section>
-        <section class="iframe-div">
-            <!-- <h1>This is a blank page...</h1>
-            <h2>How would you like to see this page...</h2>
-            <strong>leave you thougs in the comments below.</strong>
-            <h1>&#x32DB;</h1> -->
-            <div class="frame-view">
-                <div class="float-btn">
+        <section class="iframe-div" id="sectId">
+            <!-- This is a container for a working page,
+                any code requested goes on thet page presented here
+            witch is default.html, no code goes in the actual index page. -->
+            <div id="iframeId" class="frame-view">
+                <!-- for phone and tablet orientation purporse  -->
+                <!-- <div class="float-btn" id="orientationbtn">
                     <button class="btn fa fa-mobile"></button>
-                    <button class="btn fa fa-mobile landscape"></button>
-                </div>
+                    <button class="btn fa fa-mobile landscape" onclick="horizontalView()"></button>
+                </div> -->
                 <iframe src="doc/default.html" frameborder="0"></iframe>
             </div>
         </section>
         <section class="comment-sec">
-            <p>comment and request goes here...</p>
+            <p id="test">comment and request goes here...</p>
         </section>
         
         <!-- Javascript zone -->

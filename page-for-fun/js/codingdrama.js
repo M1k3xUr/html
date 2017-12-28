@@ -1,24 +1,37 @@
-function openTab(evt, tabName){
-    //variable
-    var i, tabcontent, tablinks;
+// variables
+var x = document.getElementById("iframeId");
+var y = document.getElementById("sectId");
+var z = document.getElementById("orientationbtn");
+var vert = document.getElementById("portrait");
+var hori = document.getElementById("landscape");
 
-    //get all elements from class
-    tabcontent = document.getElementsByClassName("tabcontent");
-    tablinks = document.getElementsByClassName("tablinks");
-
-    //looping thru the classes
-    //tbacontent
-    for(i = 0; i < tabcontent.length; i++){
-        tabcontent[i].style.display = "none";
-    }
-    //tablinks
-    for(i = 0; tablinks.length; i++){
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-
-    //Showing the current tab, and add active to the button that opened that tab
-    document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
-
-    
+/**
+* check if the radio button is checked and if its true
+* change the size of iframe to the corresponding size.
+*/
+function phoneView(){
+    x.style.width = "320px";
+    y.style.height = "480px";
+    z.style.display = "block";
 }
+function tabletView(){
+    x.style.width = "80%";
+    y.style.height = "90%";
+    z.style.display = "block";
+}
+function desktopView(){
+    x.style.width = "100%";
+    y.style.height = "90%";
+    z.style.display = "none";
+}
+
+/**
+ * checking orientation buttons, if clicked then 
+ * change orientation sizes of the iframe preview
+ */
+/*function horizontalView(){
+    var c;
+    c = x.style.width;
+    x.style.width = y.style.height;
+    y.style.height = c;
+}*/

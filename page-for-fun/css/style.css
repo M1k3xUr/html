@@ -48,19 +48,21 @@ body{
     overflow: hidden;
 }
 .tab button{
-    background-color: transparent;
-    float: left;
+    background-color: #0066ff;
     border: none;
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
+    margin: 5px;
     transition: 0.3s;
 }
 .tab button:hover{
     background-color: #ddd;
+    color: #3A3A3A;
 }
 .tab button:active{
     background-color: #ccc;
+    color: #3A3A3A;
 }
 .tabcontent{
     display: none;
@@ -75,14 +77,15 @@ body{
 }
 
 /* for the preview */
-.float-btn{
+/*.float-btn{
     position: absolute;
     right: 10px;
     font-size: 38px;
+    display: block;
 }
 .landscape{
     transform: rotate(90deg);
-}
+}*/
 .center{
     text-align: center;
 }
