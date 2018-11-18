@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mose" ng-controller="moseCtrl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{sitetitle}}</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- mystyle -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- dd -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+</head>
+<body>
+    <!-- 
+        Main display only contains  two types of inputs:
+        1: Upload a html file 
+        2: Create or paste you code inside the editor and hit "Test" buttom
+    -->
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-light bg-light">
+        <a href="" ng-click="showhome()" class="nav-link">Home</a>
+        <a href="" ng-click="showabout()" class="nav-link">About</a>
+    </nav>
+    <!-- Main Display -->
+    <div class="container-fluid main-screen" ng-hide="mainview">
+        <!-- Main title -->
+        <h1 class="display-2">{{sitetitle}}</h1>
+        <div class="row addfileform">
+            <!-- One goes here -->
+            <div class="col-md-12">
+                <div class="form-group text-center container">
+                    <label for="fileinput"><h4>Upload your HTML file and Press TEST buttom</h4></label>
+                    <input class="form-control-file mt-5" type="file" id="fileinput" accept=".html">
+                    <button class="btn btn-primary mt-5" ng-click="showhide()">Test</button>
+                </div>
+            </div>
+            <!-- Two goes here -->
+            <!-- <div class="col-md-6 form-group">
+                <label for="htmlcode">Place your Email HTML Code here</label>
+                <textarea class="form-control" id="htmlcode" rows="10"></textarea>
+                <button class="btn btn-primary container mt-4" onclick="save()">Test</button>
+            </div> -->
+        </div>
+    </div>
+    <!-- Testing display -->
+    <div class="container-fluid test-screen" ng-hide="setview">
+        <!-- for future file to test -->
+        <div class="showmore">
+            <h4 class="text-center">Choose a New File</h4>
+            <div class="input-group container">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-secondary" type="button" ng-click="showmore()">Button</button>
+                </div>
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="inputGroupFile03">
+                  <label class="custom-file-label" for="inputGroupFile03">Choose file</label>
+                </div>
+            </div>
+        </div>
+        <!-- divided by mayor brand -->
+        <ul class="nav nav-pills nav-fill" id="brand-tab" role="tablist">
+            <li class="nav-item">
+                <a href="#pill-apple" class="nav-link" id="apple-tab" data-toggle="pill" role="tab" aria-controls="pill-apple" aria-selected="true">Apple</a>
+            </li>
+            <li class="nav-item">
+                <a href="#pill-android" class="nav-link" id="android-tab" data-toggle="pill" role="tab" aria-controls="pill-android" aria-selected="false">Android</a>
+            </li>
+            <li class="nav-item">
+                <a href="#pill-windows" class="nav-link" id="windows-tab" data-toggle="pill" role="tab" aria-controls="pill-windows" aria-selected="false">Windows</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="pill-tabContent">
+            <div class="tab-pane fade show active" id="pill-apple" role="tabpanel" aria-labelledby="apple-tab">
+                apple screens
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="..." alt="Email Preview" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">email client</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pill-android" role="tabpanel" aria-labelledby="android-tab">android screens</div>
+            <div class="tab-pane fade" id="pill-windows" role="tabpanel" aria-labelledby="windows-tab">windows screens</div>
+        </div>
+    </div>
+
+    <!-- ABOUT PAGE -->
+    <div class="container-fluid about-screen" ng-hide="setabout">
+        <h1 class="display-3 text-center">About this Site</h1>
+    </div>
+
+    <!-- javascript place -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- myscript -->
+    <script src="js/app.module.js"></script>
+    <script src="js/myscript.js"></script>
+</body>
+</html>
